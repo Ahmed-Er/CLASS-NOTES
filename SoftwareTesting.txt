@@ -1,0 +1,174 @@
+Debugging
+---------
+Debugging is a mechanism to execute source code step by step.
+
+Debugging is used to identify and fix the issue in source code.
+
+Developer is responsible for debugging.
+
+In IDE we can perform Debugging.
+
+
+Software Testing
+----------------
+The process of verifying and validating application with client requirements.
+
+The aim of Software testing to identify bugs in application.
+
+Software Testing will performed by Testers.
+
+Note: Bugs identified in testing will be repoted by tester using Bug Reporting tools like BugZIlla or Jira.
+
+Developer has to fix the bug.
+
+-----------------------------------------------------------------
+SDLC : Software development life cycle
+---------------------------------------------------------------
+Requirements gathering
+Requirements analysis
+Design
+Development
+Testing (STLC) : Software Testing life cycle.
+Deployment
+Maintenence
+--------------------------------------------------------
+Software Testing will happen in several phases
+--------------------------------------------------------
+Unit Testing
+Developer Integration Testing
+
+Smoke Testing
+Functional Testing
+Regression Testing
+User Acceptance Testing
+Performance Testing
+-------------------------------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------
+public interface UserMasterDao{
+
+	public boolean insertUser(UserEntity entity);
+}
+----------------------------------------------------
+public class UserMasterDaoImpl implements UserMasterDao{
+
+    public boolean insertUser(UserEntity entity){
+
+	//logic
+
+	return isInserted;
+    }
+
+}
+----------------------------------------------------------
+
+
+As a developer when we implement some business logic, immediatley we need to test that logic as a best practise.
+
+Unit testing can be performed in below 2 ways
+
+1) Manual Unit Testing (Debugging)
+
+2) Automated Unit Testing.
+
+we have a framework called JUnit to automate unit testing.
+
+Junit is an open source java framework which is used to perform Unit testing for java projects.
+
+JUnit framework given by Enrich Gamma
+--------------------------------------------------------------
+
+In Maven application, business classes will be created under 
+src/main/java folder
+
+Ex : UserMasterDao.java  (Business logic class)
+
+
+Unit Test classes will be created under src/main/test java folder
+
+Ex : UserMasterDaoTest.java (Unit test class for business class)
+
+---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+public class Calculator {
+	public Integer add(Integer a, Integer b) {
+		return a + b;
+	}
+}
+-----------------------------------------------------------------
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		Calculator c = new Calculator();
+
+		// Positive scneario-Testing
+		Integer sum1 = c.add(5, 10);
+		if (sum1 == 15) {
+			System.out.println("Case-1:Passed");
+		} else {
+			System.out.println("Case-1:Failed");
+		}
+
+		// Negative scenario Testing
+		Integer sum2 = c.add(5, 5);
+		if (sum2 != 20) {
+			System.out.println("Case-2:Passed");
+		} else {
+			System.out.println("Case-2:Failed");
+		}
+
+	}
+
+}
+---------------------------------------------------------------------
+-> In above approach It can't generate any summary report
+-> If any scenario failed, we can't get reason of failure
+-> If scenario failed, we need to execute all scenarios again to re-test.
+
+If we use Junit, we can resolve all these challenges.
+
+Using Junit in project
+-----------------------
+1) Add Junit libraries in project build path
+
+2) For Maven project add junit dependencies in pom.xml file.
+
+
+----------------------------------------------------------------------
+
+<dependency>
+   <groupId>junit<groupId>
+   <artifactId>junit</artifactId>
+   <version>4.3.1</version>
+</dependency>
+----------------------------------------------------------------------
+
+1) Junit Provided annotations to write test cases
+
+@Setup
+@TearDown
+
+@Before
+@After
+
+@BeforeClass
+@AfterClass
+
+@Test(expected==,timeout=)
+
+
+
+
+
+
