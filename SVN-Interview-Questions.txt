@@ -1,0 +1,23 @@
+1. What Exactly Is Svn?
+
+2. List Out What All Things Should Be Stored In Svn Repository?
+
+3. Difference Between Svn Commit And Svn Update?
+
+4. What Is Use Of Revert In Svn?
+
+5. How To Delete File From Svn Repo?
+
+6. What Is The Use Of Tortoisesvn?
+
+7. Describe About Different Best Practices For Svn?
+
+8. Explain About The Concept Of Synchronizing With The Repository?
+
+9. What Is The Command To Create A New Directory Under Version Control?
+
+	svn mkdir  src url
+
+10. What Do You Mean By "synchronizing With Repository" ? How Is It Different From "update”?
+
+11. What Is “branch” , “tag” And “trunk” In Svn ?

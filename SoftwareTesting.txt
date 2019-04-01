@@ -154,18 +154,7 @@ Using Junit in project
 </dependency>
 ----------------------------------------------------------------------
 
-1) Junit Provided annotations to write test cases
 
-@Setup
-@TearDown
-
-@Before
-@After
-
-@BeforeClass
-@AfterClass
-
-@Test(expected==,timeout=)
 
 
 

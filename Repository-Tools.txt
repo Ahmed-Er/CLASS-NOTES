@@ -282,6 +282,239 @@ To Overcome these challenges in SVN, GIT came into Picture.
 2) GIT HUB (Cloud platform)
 
 
+Distributed System
+
+git hub web application
+GIT UI app
+GIT Bash (command prompt)
+
+
+
+
+local system ------ local repo  ------- central repo
+
+
+local repo will be created in our system only
+
+central repo will be created in git cloud
+
+
+when we create one account in git hub, it provides some free space for us.
+
+Using this free space we can create several repositories.
+
+
+In GIT central we can create below 2 types of repositories
+
+1) Public Repository : Everybody can see and we can choose who can commit
+
+
+
+2) Private Repository : we can choose who can see and commit
+
+
+
+GIT Central Repo URL : 
+
+https://github.com/Java-Project-03-9AM/JavaProject_Demo.git
+
+GIT Bash
+========
+It works as GIT Client
+
+git config : to setup uname and email
+
+git init : to initialize git repo in local system
+
+git clone : checkout
+
+syntax: git clone  <repo-url>
+
+
+
+
+git add : this is used to add a file to staging area
+
+
+syntax: git add <file-name> (to add specific file)
+
+	git add --a (to add all files)
+
+
+git commit : to commit changes to local repository
+
+	syntax : git commit -m 'commit message'
+
+git push : to move changes from local repo to central repo
+
+git pull : taking changes from central to local repo
+
+git status : checking staged and un-staged files
+
+git diff : to compare local file with centraol repo file
+
+git checkout : 
+
+
+
+
+
+https://github.com/Java-Project-03-9AM/JavaProject_Demo.git
+
+
+src/main/java/com/ashok/properties/AppProperties.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+
+
+
+
+git config --global  user.email ""
+
+git config --global user.name ""
+
+git init
+
+git clone   <repo_url>
+
+git clone https://github.com/Java/JavaProject_Demo.git
+
+git status
+
+staged files will display in green color
+un-staged files will display in red color
+
+git add filename
+
+git add --a (all modified files will get staged)
+
+
+git commit  -m  'commit msg'  (local repo)
+
+git push
+
+
+
+
+
+
+
+@GetMapping(value="/test")
+	public String m3(){
+		return "Test";
+	}
+
+
+
+develop
+
+feature 
+
+qabranch
+
+release
+
+master
+
+
+
+
+
+
+
+https://github.com/Java-Project-03-9AM/JavaProject_Demo.git
+
+https://github.com/Java-Project-03-9AM/JavaProject_Demo.git
+
+
+
+
+
+
+
+POC- proof of concept
+
+from develop branch create new branch for our poc.
+
+
+
+
+
+
+GIT GIT Hub
+
+
+
+SVN
+GIT Hub
+
+
+Local Repository (in our pc)
+Central Repository (cloud platform)
+---------------------------------------------
+public or private repository
+
+
+http://www.github.com/username/repository.git
+
+git clone repo_url
+
+git add  --a
+
+git status
+
+git commit -m ''
+
+git push
+
+git pull
+
+git log
+-------------------------------------------------
+We can use git direclty from IDE.
+
+import - > git -> clone uri -> finish
+
+Synchronize workspace
+
+develop
+release
+qa
+feature
+master
+
+
+master - available
+
+
+
+CI and CD - continuos integrationa nd continous deployment
+
+Jenkins-used for buid automation
+
+Devops team will create pipe line for deploying code to server.
+
+
+Hi Build Team,
+
+As part of Asynchronus calls POC, today we have created a new Branch for IES application. Please create pipeline for the same.
+
+Branch Name : async-poc
+Project Name: IES
+
+Repo URL : http://www.bitbucket.com/IES.git
+
+Thanks&Regards,
+Ashok.
+
+
+
+
+
+
 
 
 
