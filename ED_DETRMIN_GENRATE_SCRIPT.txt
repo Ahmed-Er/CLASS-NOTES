@@ -1,0 +1,29 @@
+----------------------Create Table-----------------
+ create table eligibility_details (
+       ed_trace_id number(10,0) not null,
+        benefit_amt varchar2(255),
+        case_num number(19,0),
+        create_dt date,
+        denial_reason varchar2(255),
+        plan_end_dt varchar2(255),
+        plan_name varchar2(255),
+        plan_start_dt varchar2(255),
+        plan_status varchar2(255),
+        update_dt date,
+        primary key (ed_trace_id)
+    )
+------------------------------------------------------------
+
+DECLARE
+i number:=1;
+ed_trace_id number:=100;
+case_no number:=10000;
+BEGIN
+WHILE i <50000 LOOP
+    insert into ELIGIBILITY_DETAILS values(ed_trace_id,'$600',case_no,sysdate,null,null,'SNAP',sysdate,'AP',null);
+    i:= i + 1;
+    ed_trace_id:=ed_trace_id +1;
+    case_no:=case_no+1;
+  END LOOP;
+END;
+/
